@@ -306,10 +306,7 @@ final class _$HttpTestService extends HttpTestService {
       client.baseUrl,
       body: $body,
     );
-    return client.send<dynamic, dynamic>(
-      $request,
-      requestConverter: convertForm,
-    );
+    return client.send<dynamic, dynamic>($request);
   }
 
   @override
@@ -345,10 +342,7 @@ final class _$HttpTestService extends HttpTestService {
       client.baseUrl,
       body: $body,
     );
-    return client.send<dynamic, dynamic>(
-      $request,
-      requestConverter: convertForm,
-    );
+    return client.send<dynamic, dynamic>($request);
   }
 
   @override
@@ -361,11 +355,7 @@ final class _$HttpTestService extends HttpTestService {
       client.baseUrl,
       body: $body,
     );
-    return client.send<dynamic, dynamic>(
-      $request,
-      requestConverter: customConvertRequest,
-      responseConverter: customConvertResponse,
-    );
+    return client.send<dynamic, dynamic>($request);
   }
 
   @override
@@ -816,10 +806,7 @@ final class _$HttpTestService extends HttpTestService {
       client.baseUrl,
       body: $body,
     );
-    return client.send<void, void>(
-      $request,
-      requestConverter: FormUrlEncodedConverter.requestFactory,
-    );
+    return client.send<void, void>($request);
   }
 
   @override

@@ -326,10 +326,7 @@ final class _$HttpTestService extends HttpTestService {
       client.baseUrl,
       body: $body,
     );
-    final Response $response = await client.send<dynamic, dynamic>(
-      $request,
-      requestConverter: convertForm,
-    );
+    final Response $response = await client.send<dynamic, dynamic>($request);
     return $response.bodyOrThrow;
   }
 
@@ -367,10 +364,7 @@ final class _$HttpTestService extends HttpTestService {
       client.baseUrl,
       body: $body,
     );
-    final Response $response = await client.send<dynamic, dynamic>(
-      $request,
-      requestConverter: convertForm,
-    );
+    final Response $response = await client.send<dynamic, dynamic>($request);
     return $response.bodyOrThrow;
   }
 
@@ -384,11 +378,7 @@ final class _$HttpTestService extends HttpTestService {
       client.baseUrl,
       body: $body,
     );
-    final Response $response = await client.send<dynamic, dynamic>(
-      $request,
-      requestConverter: customConvertRequest,
-      responseConverter: customConvertResponse,
-    );
+    final Response $response = await client.send<dynamic, dynamic>($request);
     return $response.bodyOrThrow;
   }
 
